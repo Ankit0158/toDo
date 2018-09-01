@@ -44,6 +44,9 @@ function createToDo(toDoText, status, listCount) {
     var contentDiv = document.createElement("div");
     contentDiv.classList.add("containt");
     contentDiv.classList.add("list-item");
+    contentDiv.setAttribute("draggable", "true");
+    contentDiv.setAttribute("id", listCount);
+    contentDiv.setAttribute("ondragstart", "dragStart(event)");
     if (status == 1) {
         contentDiv.classList.add("checked-content");
     }
@@ -100,6 +103,11 @@ function changeStatus(count) {
     toDoList[count].status = 1;
     localStorage.setItem('toDoList', JSON.stringify(toDoList));
 }
+
+function dragStart(e){
+    var id = e.transferData.setData("id",e.target.)
+}
+
 window.addEventListener("load", function() {
     document.getElementById("addBtn").addEventListener("click", addToDo);
 });
