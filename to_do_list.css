@@ -1,0 +1,57 @@
+.container {
+    margin: 150px 300px;
+    padding: 50px;
+    background-color: #9370DB;
+}
+
+.hedding {
+    color: white;
+    text-align: center;
+}
+
+.todo-input-text {
+    width: 75%;
+    font-size: 30px;
+    padding: 10px;
+    border: 0px;
+    border-bottom: 2px solid #191970;
+    background-color: #FFFAFA;
+    outline: none;
+}
+
+.add-btn {
+    width: 20%;
+    padding: 10px 20px;
+    font-size: 30px;
+    background-color:
+}
+
+.list-item {
+    display: inline-block;
+    width: 95%;
+    padding: 10px;
+    background-color: #A9A9A9;
+    margin-top: 10px;
+    font-size: 25px;
+    overflow: auto;
+}
+
+.icon {
+    margin-right: 15px;
+}
+.dragIcon{
+    float: right;
+}
+
+.list-item>div {
+    display: inline-block;
+}
+
+.checked-content {
+    background-color: #C0C0C0;
+    color: #A9A9A9;
+}
+
+.checked {
+    text-decoration-line: line-through;
+}
