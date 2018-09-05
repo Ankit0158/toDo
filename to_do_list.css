@@ -58,3 +58,12 @@
 .checked {
     text-decoration-line: line-through;
 }
+@media(max-width: 980px){
+    .container {
+        margin: 15px;
+        padding: 30px;
+        background-color: #9370DB;
+        height: 650px;
+        overflow-y: scroll;
+    }
+}

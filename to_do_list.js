@@ -1,3 +1,9 @@
+function addToDoEnter(){
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        addToDo();
+    }
+}
 function showToDo() {
     toDoList = JSON.parse(localStorage.getItem('toDoList'));
     if (toDoList == null) {
@@ -197,4 +203,5 @@ function reorderLocalStorage(dropIndex, dragIndex) {
 }
 window.addEventListener("load", function() {
     document.getElementById("addBtn").addEventListener("click", addToDo);
+    document.getElementById("todo-input-text").addEventListener("keyup", addToDoEnter);
 });
