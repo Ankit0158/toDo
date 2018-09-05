@@ -1,7 +1,9 @@
 .container {
-    margin: 150px 300px;
+    margin: 150px 300px 20px 300px;
     padding: 50px;
     background-color: #9370DB;
+    height: 600px;
+    overflow-y: scroll;
 }
 
 .hedding {
@@ -39,7 +41,8 @@
 .icon {
     margin-right: 15px;
 }
-.dragIcon{
+
+.crossIcon {
     float: right;
 }
 
